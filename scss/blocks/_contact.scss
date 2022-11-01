@@ -1,0 +1,70 @@
+.contact {
+  padding: 100px 0;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 110px;
+  }
+  &__banner img {
+    width: 477px;
+    height: 430px;
+    display: block;
+    max-width: 477px;
+    overflow: hidden;
+    object-fit: contain;
+  }
+  &__content-banner{
+    width: 477px;
+    height: 430px;
+
+  }
+
+
+  &__form {
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+  }
+  &__input {
+    width: 450px;
+    outline: none;
+    border-radius: 10px;
+    background-color: #ffff;
+    border: 1px solid #8f95a5;
+    padding: 33px 0px 33px 33px;
+  }
+  ::placeholder {
+    @include font(400, 16px, 24px, $text-color);
+  }
+
+  &__btn {
+    border: none;
+    padding: 25px 80px;
+    border-radius: 10px;
+    background: #263238;
+    @include font(500, 20px, 30px, #ffffff);
+
+    &:hover {
+      color: #ffff;
+      background: rgb(2, 0, 36);
+      background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(10, 38, 240, 1) 45%,
+        rgba(74, 255, 0, 0.9979342078628326) 70%
+      );
+    }
+    &:active {
+      color: #ffff;
+      background: rgb(74, 255, 0);
+      background: linear-gradient(
+        90deg,
+        rgba(74, 255, 0, 1) 18%,
+        rgba(10, 38, 240, 1) 52%,
+        rgba(11, 0, 36, 0.9951330874146533) 89%
+      );
+    }
+  }
+}

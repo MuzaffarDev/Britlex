@@ -1,0 +1,65 @@
+// sliceNoWrap  Text uzun bo'lib kontentni buzib yubormasligi oldini oladi va oxiriga 3 nuqtaa ... qo'yib yakunlaydi
+
+@mixin sliceNoWrap() {
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+// sliceTextWebkit Title ga qanchada tugashi kerakligi aytiladi(number)kontentni buzib yubormasligi oldini oladi va oxiriga 3 nuqtaa ... qo'yib yakunlaydi
+
+@mixin sliceTextWebekit($number) {
+  overflow: hidden;
+  display: -webkit-box !important;
+  -webkit-line-clamp: $number !important;
+  -webkit-box-orient: vertical !important;
+}
+
+@mixin font(
+  $fontWeight: 400,
+  $fontSize: 14px,
+  $lineHeight: 21px,
+  $textColor: $text-color
+) {
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color: $textColor;
+}
+
+
+
+
+/* Resposive mixins */
+
+@mixin xl {
+  @media only screen and (max-width: $xl) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media only screen and (max-width: $lg) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media only screen and (max-width: $md) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media only screen and (max-width: $sm) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media only screen and (max-width: $xs) {
+    @content;
+  }
+}

@@ -1,0 +1,40 @@
+.about {
+  padding: 100px 0;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__info {
+    width: 652px;
+  }
+
+  &__statistics-list {
+    gap: 140px;
+    display: flex;
+  }
+
+  &__statistics-item {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  &__statistics-number{
+    color: $number-color;
+  }
+
+  &__banner {
+    width: 500px;
+    height: 500px;
+    img {
+      max-width: 500px;
+      width: 500px;
+      height: 500px;
+      display: block;
+      overflow: hidden;
+      object-fit: cover;
+    }
+  }
+}

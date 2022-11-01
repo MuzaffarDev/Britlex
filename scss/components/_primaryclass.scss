@@ -1,0 +1,339 @@
+/* Responsive font disegn */
+
+.title {
+  text-transform: capitalize;
+  @include font(600, 48px, 80px, $title-black);
+
+  @include lg {
+    font-size: 36px;
+  }
+
+  @include md {
+    font-size: 30px;
+  }
+
+  @include sm {
+    font-size: 30px;
+  }
+
+  @include xs {
+    font-size: 18px;
+  }
+}
+
+.text {
+  @include font(400, 20px, 30px, $text-color);
+
+  @include lg {
+    font-size: 14px;
+  }
+
+  @include md {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  @include sm {
+    font-size: 12px;
+  }
+
+  @include xs {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
+.card__title {
+  margin-bottom: 20px;
+  @include font(600, 30px, 30px, $card-title-color);
+}
+
+.card__text {
+  @include font(400, 16px, 24px, $text-color);
+}
+
+/* Responsive button disegn */
+
+.header__logo-link,
+.footer__logo-link {
+  @include font(400, 36px, 54px, $title-black);
+
+  @include xl {
+    @include font(400, 36px, 54px, $title-black);
+  }
+
+  @include lg {
+    @include font(400, 30px, 45px, $title-black);
+  }
+
+  @include xs {
+    @include font(400, 24px, 36px, $title-black);
+  }
+
+  span {
+    color: #939393;
+  }
+}
+
+.hero__button {
+  padding: 32px 117px;
+  border: none;
+  border-radius: 15px;
+  background: $card-title-color;
+  @include font(400, 36px, 54px, #ffffff);
+  &:hover {
+    border: none;
+    color: #ffff;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(10, 38, 240, 1) 45%,
+      rgba(74, 255, 0, 0.9979342078628326) 70%
+    );
+  }
+  &:active {
+    color: #ffff;
+    background: rgb(74, 255, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(74, 255, 0, 1) 18%,
+      rgba(10, 38, 240, 1) 52%,
+      rgba(11, 0, 36, 0.9951330874146533) 89%
+    );
+  }
+
+  @include xl {
+    padding: 27px 110px;
+    border-radius: 15px;
+    @include font(400, 24px, 54px, #ffffff);
+  }
+
+  @include lg {
+    padding: 22px 78px;
+    border-radius: 5px;
+    @include font(400, 24px, 36px, #ffffff);
+  }
+
+  @include md {
+    font-size: 18px;
+    line-height: 27px;
+    padding: 19px 67px;
+  }
+
+  @include sm {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    padding: 24px 101px;
+  }
+
+  @include xs {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 18px 99px;
+  }
+}
+
+.skills-button {
+  border-radius: 5px;
+  padding: 15px 52px;
+  display: inline-block;
+  background: $card-title-color;
+  @include font(500, 20px, 30px, #ffffff);
+
+  &:hover {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(10, 92, 240, 1) 37%,
+      rgba(0, 212, 255, 1) 100%
+    );
+  }
+
+  @include xl {
+    padding: 15px 52px;
+    @include font(500, 20px, 30px, #ffffff);
+  }
+
+  @include lg {
+    padding: 18px 42px;
+    @include font(500, 18px, 27px, #ffffff);
+  }
+
+  @include md {
+    padding: 14px 42px;
+    @include font(500, 16px, 24px, #ffffff);
+  }
+
+  @include sm {
+    padding: 14px 54px;
+    @include font(500, 21px, 54px, #ffffff);
+  }
+
+  @include xs {
+    padding: 14px 42px;
+    @include font(500, 14px, 21px, #ffffff);
+  }
+}
+
+.pricing__money {
+  padding: 0px 20px;
+  border-radius: 5px;
+  background: #eeeeee;
+  display: inline-block;
+  @include font(400, 30px, 45px, $card-title-color);
+
+  @include xl {
+    padding: 0px 20px;
+    @include font(400, 30px, 45px, $card-title-color);
+  }
+
+  @include lg {
+    padding: 0px 20px;
+    @include font(400, 24px, 36px, $card-title-color);
+  }
+
+  @include md {
+    @include font(400, 22px, 33px, $card-title-color);
+  }
+
+  @include xs {
+    // padding: 0px 20px;
+    @include font(400, 18px, 27px, $card-title-color);
+  }
+
+  span {
+    @include font(400, 18px, 27px, #546269);
+
+    @include xl {
+      @include font(400, 18px, 27px, #546269);
+    }
+
+    @include lg {
+      @include font(400, 16px, 24px, #546269);
+    }
+
+    @include xs {
+      @include font(400, 14px, 21px, #546269);
+    }
+  }
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+
+  @include xl {
+    margin-bottom: 100px;
+  }
+
+  @include lg {
+    margin-bottom: 90px;
+  }
+
+  @include md {
+    margin-bottom: 70px;
+  }
+
+  @include sm {
+    margin-bottom: 55px;
+  }
+
+  @include xs {
+    margin-bottom: 40px;
+  }
+}
+
+.mb-90 {
+  margin-bottom: 90px;
+
+  @include xl {
+    margin-bottom: 90px;
+  }
+
+  @include lg {
+    margin-bottom: 70px;
+  }
+
+  @include md {
+    margin-bottom: 60px;
+  }
+
+  @include sm {
+    margin-bottom: 40px;
+  }
+
+  @include xs {
+    margin-bottom: 30px;
+  }
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+
+  @include xl {
+    margin-bottom: 80px;
+  }
+
+  @include lg {
+    margin-bottom: 70px;
+  }
+
+  @include md {
+    margin-bottom: 60px;
+  }
+
+  @include sm {
+    margin-bottom: 40px;
+  }
+
+  @include xs {
+    margin-bottom: 30px;
+  }
+}
+
+.mb-45 {
+  margin-bottom: 45px;
+
+  @include xl {
+    margin-bottom: 45px;
+  }
+  @include lg {
+    margin-bottom: 40px;
+  }
+  @include md {
+    margin-bottom: 35px;
+  }
+  @include sm {
+    margin-bottom: 20px;
+  }
+  @include xs {
+    margin-bottom: 15px;
+  }
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+
+  @include xl {
+    margin-bottom: 25px;
+  }
+  @include lg {
+    margin-bottom: 20px;
+  }
+  @include md {
+    margin-bottom: 15px;
+  }
+  @include sm {
+    margin-bottom: 10px;
+  }
+  @include xs {
+    margin-bottom: 5px;
+  }
+}
+
+.d-flex {
+  display: flex;
+}

@@ -1,0 +1,30 @@
+.footer {
+  padding: 50px 0px 0px;
+
+  &__content {
+    display: flex;
+    padding: 55px 0;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #c4c4c4;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    gap: 5px;
+    @include font(400, 24px, 36px, $text-color);
+  }
+  &__drop {
+    width: 5px;
+    height: 5px;
+    margin: 0 8px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: inline-block;
+    background: $text-color;
+  }
+}

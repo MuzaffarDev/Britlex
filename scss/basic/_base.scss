@@ -1,0 +1,13 @@
+body {
+  font-family: "Poppins", "Tahoma", serif;
+  height: 100vh;
+  user-select: none;
+  // user-select: none; website dan content textini blocklash uchun ishlatilgan kod
+}
+
+
+.container {
+  margin: 0 auto;
+  padding: 0 40px;
+  max-width: 1440px;
+}

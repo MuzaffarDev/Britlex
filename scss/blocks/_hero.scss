@@ -1,0 +1,171 @@
+.hero {
+  padding: 50px 0;
+
+  @include xl {
+    padding: 50px 0;
+  }
+
+  @include lg {
+    padding: 40px 0;
+  }
+  @include md {
+    padding: 30px 0;
+  }
+  @include sm {
+    width: 100%;
+    padding: 20px 0;
+  }
+  @include xs {
+    padding: 10px 0;
+  }
+
+  &__content {
+    display: flex;
+    padding-top: 150px;
+    justify-content: space-between;
+
+    @include sm {
+      width: 100%;
+      padding-top: 20px;
+      flex-direction: column-reverse;
+    }
+    @include xs {
+      padding: 10px 0;
+    }
+  }
+
+  &__info {
+    width: 526px;
+    max-width: 526px;
+    position: relative;
+
+    @include lg {
+      width: 526px;
+    }
+
+    @include lg {
+      width: 420px;
+    }
+    @include md {
+      width: 350px;
+    }
+    @include sm {
+      text-align: center;
+    }
+  }
+
+  &__title-box {
+    position: relative;
+  }
+
+  &__title {
+    width: 400px;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+    @include font(600, 64px, 80px, $title-black);
+
+    @include xl {
+      @include font(600, 64px, 80px, $title-black);
+    }
+
+    @include lg {
+      @include font(600, 48px, 64px, $title-black);
+    }
+    @include md {
+      @include font(600, 36px, 45px, $title-black);
+    }
+    @include xs {
+      @include font(600, 24px, 36px, $title-black);
+    }
+  }
+
+  &__text {
+    margin-bottom: 60px;
+    @include font(400, 24px, 36px, $text-color);
+
+    @include xl {
+      margin-bottom: 50px;
+      @include font(400, 24px, 36px, $text-color);
+    }
+
+    @include lg {
+      margin-bottom: 45px;
+      @include font(400, 20px, 30px, $text-color);
+    }
+    @include md {
+      margin-bottom: 30px;
+      @include font(400, 16px, 24px, $text-color);
+    }
+    @include xs {
+      margin-bottom: 20px;
+      @include font(400, 14px, 21px, $text-color);
+    }
+  }
+
+  &__img {
+    img {
+      max-width: 85;
+      height: 85px;
+      object-fit: cover;
+      overflow: hidden;
+      display: block;
+    }
+    top: 40%;
+    left: 90%;
+    height: 85px;
+    width: 85px;
+    position: absolute;
+
+    @include xl {
+      top: 40%;
+      left: 70%;
+      width: 85px;
+      height: 85px;
+    }
+
+    @include lg {
+      top: 50%;
+      left: 80%;
+      width: 60px;
+      height: 60px;
+    }
+    @include md {
+      top: 50%;
+      left: 65%;
+      width: 50px;
+      height: 50px;
+    }
+
+    @include sm {
+      display: none;
+    }
+  }
+
+  &__banner {
+    width: 661px;
+    height: 661px;
+    margin: 0 auto;
+
+    @include xl {
+      min-width: 600px;
+      height: 661px;
+    }
+
+    @include lg {
+      min-width: 460px;
+      height: 460px;
+    }
+    @include md {
+      min-width: 352px;
+      height: 352px;
+    }
+    @include sm {
+      max-width: 424px;
+      height: 424px;
+    }
+    @include xs {
+      max-width: 300px;
+      height: 300px;
+    }
+  }
+}
