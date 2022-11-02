@@ -1,37 +1,135 @@
 .about {
   padding: 100px 0;
 
+  @include xl {
+    padding: 80px 0;
+  }
+  @include lg {
+    padding: 60px 0;
+  }
+  @include md {
+    padding: 40px 0;
+  }
+  @include sm {
+    width: 100%;
+    padding: 20px 0;
+  }
+  @include xs {
+    padding: 10px 0;
+  }
+
   &__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include sm {
+      width: 100%;
+      padding-top: 20px;
+      flex-direction: column-reverse;
+    }
+
+    @include xs {
+      padding: 10px 0;
+    }
   }
 
   &__info {
     width: 652px;
+
+    @include xl {
+      width: 652px;
+    }
+    @include lg {
+      width: 600px;
+    }
+    @include md {
+      width: 400px;
+    }
+    @include sm {
+      width: 100%;
+    }
   }
+
+  // &__title{
+
+  // }
+
+  // &__text{
+
+  // }
 
   &__statistics-list {
     gap: 140px;
     display: flex;
+
+    @include xl {
+      gap: 120px;
+    }
+    @include lg {
+      gap: 60px;
+    }
+    @include md {
+      gap: 50px;
+    }
+    @include sm {
+      gap: 40px;
+    }
+    @include xs {
+      gap: 20px;
+      flex-direction: column;
+    }
   }
 
   &__statistics-item {
     text-align: center;
-    flex-direction: column;
   }
 
-  &__statistics-number{
+  &__statistics-number {
     color: $number-color;
+
+    @include xl {
+    font-size: 48px;
   }
+  @include lg {
+    font-size: 30px;
+  }
+  @include md {
+    font-size: 22px;
+  }
+  @include sm {
+    font-size: 24px;
+  }
+  }
+
+
 
   &__banner {
     width: 500px;
     height: 500px;
-    img {
-      max-width: 500px;
+
+    @include xl {
       width: 500px;
       height: 500px;
+    }
+    @include lg {
+      width: 336px;
+      height: 336px;
+    }
+    @include md {
+      width: 295px;
+      height: 295px;
+    }
+    @include sm {
+      width: 352px;
+      height: 352px;
+    }
+    @include xs {
+      width: 283px;
+      height: 283px;
+    }
+
+    img {
       display: block;
       overflow: hidden;
       object-fit: cover;

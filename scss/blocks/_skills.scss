@@ -1,21 +1,21 @@
 .skills {
   padding: 50px 0;
 
-  @include xl{
+  @include xl {
     padding: 50px 0;
-  };
-  @include lg{
+  }
+  @include lg {
     padding: 40px 0;
-  };
-  @include md{
+  }
+  @include md {
     padding: 30px 0;
-  };
-  @include sm{
+  }
+  @include sm {
     padding: 25px 0;
-  };
-  @include xs{
+  }
+  @include xs {
     padding: 20px 0;
-  };
+  }
 
   &__title {
     text-align: center;
@@ -59,17 +59,25 @@
     }
 
     .card-1 {
+      width: 435px;
       padding: 90px 35px;
+
+      @include xl{
+        
+      }
     }
     .card-2 {
+      width: 434px;
       height: 535px;
       padding: 0px 0px 40px 40px;
     }
     .card-3 {
+      width: 434px;
       height: 535px;
       padding: 0px 0px 40px 40px;
     }
     .card-4 {
+      width: 885px;
       height: 343px;
       padding: 44px 25px;
       flex-direction: row-reverse;
