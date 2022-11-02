@@ -1499,8 +1499,9 @@ body {
   bottom: -5px;
   position: absolute;
   border-radius: 3px;
-  background-color: rgba(14, 240, 37, 0.708);
-  transition: width 0.3s ease;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(90deg, rgb(131, 58, 180) 0%, rgb(253, 29, 29) 64%, rgb(252, 176, 69) 100%);
+  transition: width 0.3s cubic-bezier(0.4, 0, 1, 1);
   transform: translateX(50%);
 }
 @media only screen and (max-width: 1200px) {
@@ -1551,7 +1552,8 @@ body {
 }
 .header__menu-item.active a::before {
   content: "";
-  color: rgba(14, 240, 37, 0.708);
+  background: rgb(131, 58, 180);
+  background: linear-gradient(90deg, rgb(131, 58, 180) 0%, rgb(253, 29, 29) 64%, rgb(252, 176, 69) 100%);
   height: 2px;
   width: 100%;
   position: absolute;
